@@ -29,7 +29,6 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
-        <p>this is Dev branch</p>
         <span>{count}</span>
         <ButtonWrapper>
           <ChangeValueButton onClick={() => dispatch(increment())}>
