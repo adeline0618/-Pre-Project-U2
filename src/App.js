@@ -1,8 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-import styled from 'styled-components';
-import { useDispatch, useSelector } from 'react-redux';
-import { decrement, increment } from './action';
+import logo from "./logo.svg";
+import "./App.css";
+import styled from "styled-components";
+import { useDispatch, useSelector } from "react-redux";
+import { decrement, increment } from "./action";
 
 const ChangeValueButton = styled.button`
   display: inline-flex;
@@ -22,13 +22,14 @@ const ButtonWrapper = styled.div`
 `;
 
 function App() {
-  const count = useSelector((state) => state);
+  const count = useSelector(state => state);
   const dispatch = useDispatch();
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className='App'>
+      <header className='App-header'>
+        <img src={logo} className='App-logo' alt='logo' />
+        <p>this is Dev branch</p>
         <span>{count}</span>
         <ButtonWrapper>
           <ChangeValueButton onClick={() => dispatch(increment())}>
